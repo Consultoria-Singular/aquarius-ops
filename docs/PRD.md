@@ -8,7 +8,7 @@ O **Aquarius** é uma aplicação completa (Full Stack) projetada para monitorar
 - Jornalistas e pesquisadores.
 - Organizações não governamentais (ONGs) de fiscalização.
 
-## 3. Funcionalidades Principais
+## 3. Funcionalidades - MVP
 
 ### 3.1 Autenticação e Perfil
 - **Login e Cadastro Seguro**: Integração com **Supabase Auth** para gerenciamento de contas.
@@ -38,7 +38,27 @@ O **Aquarius** é uma aplicação completa (Full Stack) projetada para monitorar
 - **Atualizações em Tempo Real**: Feed com os acontecimentos mais recentes do Congresso.
 - **Resumos com IA**: Cada item do feed conta com um resumo gerado por IA para facilitar o entendimento rápido do contexto político.
 
-## 4. Arquitetura Técnica
+## 4. Funcionalidades - Roadmap
+
+### 4.1 Transparência Financeira Expandida
+- **Gastos com Emendas**: Monitoramento detalhado de gastos com emenda por deputado.
+
+### 4.2 Atuação em Comissões
+- **Detalhamento de Comissões**:
+  - Lista de comissões em que o deputado participa.
+  - Atuação na comissão: votações, propostas apresentadas e alterações sugeridas.
+
+### 4.3 Feed Comunitário e Temático
+- **Feed Personalizado**: Baseado nos deputados seguidos e temas relevantes (Projetos de lei em votação, textos finais de comissões, etc).
+- **Filtros de Visualização**:
+  - **Mais Novo**: Ordem temporal decrescente.
+  - **Em Pauta**: Posts mais votados e com maior interação (Trending).
+- **Sistema de Interação**:
+  - **Posts**: Sistema de "Likes" e "Dislikes".
+  - **Comentários**: Espaço para discussão com sistema de "Upvote" (+1 like) e "Downvote" (-1 like).
+- **Busca Integrada**: Aba de pesquisas para encontrar posts específicos por tema dentro do feed.
+
+## 5. Arquitetura Técnica
 
 ### Frontend
 - **Framework**: React Native com Expo (suporte a iOS e Android).
@@ -52,7 +72,7 @@ O **Aquarius** é uma aplicação completa (Full Stack) projetada para monitorar
 - **Sistema**: Supabase (PostgreSQL).
 - **Dados**: Persistência de usuários, preferências (Meus Parlamentares) e cache de dados.
 
-## 5. Integrações Externas
+## 6. Integrações Externas
 
 ### APIs de Dados Abertos
 - **Câmara dos Deputados**: Fonte primária de dados sobre deputados, despesas e proposições da câmara.
